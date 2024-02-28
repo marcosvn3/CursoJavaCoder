@@ -1,15 +1,17 @@
 package generecis_12;
 
-//Esse "tipo" so é especificado na hora de uso
-public class CaixaComGenerics <TIPO>{
+//O "T" so é especificado na hora de uso assim 
+// fazendo com que nao se precise usar o cast
+// evitando problemas na hora de compilar
+public class CaixaComGenerics <T>{
 	
-private TIPO coisa;
+private T coisa;
 	
-	public void guardar(TIPO coisa) {
+	public void guardar(T coisa) {
 		this.coisa = coisa;
 	}
 	
-	public TIPO abrir() {
+	public T abrir() {
 		return coisa;
 	}
 }
